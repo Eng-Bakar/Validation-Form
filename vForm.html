@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFFAE6]">
+    <div class="w-[450px] shadow-lg flex shadow-[#939393] relative ml-[100px] h-[300px] mb-[50px] rounded-[10px] mt-[30px] bg-white">
+        <div class="w-[200px] px-[30px] py-[20px]">
+            <form id="form">
+                <h1 class="font-semibold">Get in <span class="text-[#FF5F00]">touch</span></h1>
+                <p class="text-[7px] w-[150px]">Aliquam totam nisi quisquam ipsum similique eveniet quas! Dignissimos!</p>
+                <div class="mt-[-2px]">
+                    <input id="name" class="border-b-[1px] w-[200px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="text" placeholder="Contact Name">
+                    <span id="name_error" class="text-red-600 text-[8px] font-semibold ml-[2px] absolute mt-[-2px]"></span>
+                    <input id="street" class="border-b-[1px] mt-[7px] w-[200px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="text" placeholder="Street (Option)">
+                    <div class="flex mt-[10px]">
+                        <input id="city" class="border-b-[1px] w-[200px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="text" placeholder="City (Option)">
+                        <input id="postcode" class="border-b-[1px] w-[80px] ml-[20px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="text" placeholder="Postcode (Option)">
+                    </div>
+                    <input id="number" class="border-b-[1px] mt-[7px] w-[200px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="tel" placeholder="Contact Phone">
+                    <span id="num_error" class="text-red-600 text-[8px] font-semibold ml-[2px] absolute mt-[-2px]"></span>
+                    <input id="email" class="border-b-[1px] mt-[7px] w-[200px] border-b-[#8E8E8E] text-[8px] pb-[2px] px-[4px]" type="text" placeholder="Email">
+                    <span id="email_error" class="text-red-600 text-[8px] font-semibold ml-[2px] absolute mt-[-2px]"></span>
+                    <textarea class="border-[1px] border-solid text-[7px] border-[#939393] px-[2px] py-[1px] mt-[10px]" name="more" id="more-info" rows="5" cols="55" placeholder="Let's talk about your idea (Option)"></textarea>
+                    <button id="submitBtn" class="w-[200px] h-[20px] mt-[2px] text-white rounded-20 bg-[#FF5F00] text-[10px]">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-[25%] h-full absolute right-0 bg-[#FF5F00] rounded-r-[10px]"></div>
+    </div>
+    <script src="vForm.js"></script>
+</body>
+</html>
